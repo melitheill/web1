@@ -1,0 +1,30 @@
+.barraprincipal{
+    background-color: rgba(163, 33, 33, 0.582);
+}
+
+.logo{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 200px;
+    }
+
+.populares {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}   
+
+.artista {
+    align-items: center;
+    padding: 50 px;
+    width: 400px;
+    height: 300px;
+
+}
