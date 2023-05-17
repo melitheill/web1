@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Compra de Tickects</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='formulario.css'>
+    
+</head>
+<body >
+   <form id="form">
+    
+   <div class="compra"> <h1>Compra tus Tickects</h1></div> 
+   
+        <div class = "pass"> 
+          <h4>Pases</h4>
+          <form action="" id="form">
+            <input type="radio" name="pass"   value=""> 3 Day Pass
+            <input type="radio" name="pass"   value=""> Dia Viernes
+            <input type="radio" name="pass"   value=""> Dia Sabado
+            <input type="radio" name="pass"   value=""> Dia Domingo
+         </div>
+       
+
+         <div class="cant-ticket">
+            <h4>Cantidad de Tickets</h4>
+              <select> 
+                <option value="cant1"> 1 </option>
+                <option value="cant2"> 2 </option>
+                <option value="cant3"> 3 </option>
+                <option value="cant4"> 4 </option>
+              </select>
+         </div>
+
+        <div class="datos-comprador">
+            <h4>Datos del Comprador</h4>
+
+              <label for="nombre">Nombre </label>
+               <input type="text" name="nombre"  value="" placeholder="Nombre" required minlength="3" >
+
+              <label for="apellido">Apellido</label>
+               <input type="text" name="apellido"  value=""  minlength="3" placeholder="Apellido" required>
+
+              <label for = "email">Email </label>
+               <input type="email" name="email" value="" minlength="9" placeholder="Email" required>
+        </div>
+
+       <div class="tarjeta">
+
+           <h4>Datos de la tarjeta de Debito o Credito</h4>
+
+             <label for="titular"> Nombre Completo del Titular de la Tarjeta </label>
+              <input type="text" name="titular"  value="" required >
+
+             <label for="tarjeta"> Numero de la tarjeta de Debito o Credito </label>
+              <input type="text" name="numero-tarjeta" value="" placeholder="1234 1234 1234 1234" required>
+
+            <label for="fecha"> Fecha de Vencimiento </label>
+             <input type="date" name="fecha"  value="" >
+
+           <label for="codigo"> Codigo de Seguridad </label>
+            <input type="password" name="codigo"  value=""  minlength="3" maxlength="4" placeholder="****" required>
+       </div>
+       
+       <div class="entrega">
+         <h4>Datos de la Entrega</h4>
+           <label for ="provincia"> Provincia</label>
+           <select> 
+            <option value="Buenos Aires" > Buenos Aires </option>
+            <option value="Catamarca"> Catamarca </option>
+            <option value="cant3"> 3 </option>
+            <option value="cant4"> 4 </option>
+         </select>
+
+           <label for="localidad">Localidad</label>
+            <input type="text" name="localidad"  value="" minlength="5" required >
+         
+           <label for="calle">Domicilio</label>
+            <input type="text" name="calle"  value=""  required>
+
+           <label for="calle-numero">Numero</label>
+            <input type="text" name="calle-numero" value="" >
+       </div>
+
+       <div class = "captcha">
+          <h2>Captcha</h2>
+             <p id ="numero-captcha"></p>
+             <input type="text" name="captcha" id = "captcha" value="" >
+                   
+       </div>
+
+       <div class="enviar">   
+            <input type="submit" name="submit" value="enviar">  
+            <p id = "validacion"></p>
+       </div>
+         
+      </form>
+   <script src='formulario.js'></script>
+</body>
+</html>
